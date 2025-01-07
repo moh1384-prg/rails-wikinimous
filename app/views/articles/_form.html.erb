@@ -1,0 +1,7 @@
+<%= simple_form_for(@article) do |f| %>
+<div class="form-group">
+  <%= f.label :content %>
+  <%= f.text_area :content, class: 'form-control', data: { editor: 'markdown' }, rows: 10 %>
+</div>
+<%= f.submit class: 'btn btn-primary my-4' %>
+<% end %>
